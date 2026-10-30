@@ -1,116 +1,166 @@
+
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Siam Islam — personal portfolio, web development journey, skills and projects.">
-  <meta name="theme-color" content="#090d1c">
-  <title>Siam Islam | Web Developer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Siam Islam's personal coding journey and projects.">
+  <title>Siam Islam | Learning to Code</title>
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-
-  <header class="site-header">
-    <nav class="nav container" aria-label="Main navigation">
-      <a class="brand" href="#home" aria-label="Siam Islam home"><span class="brand-mark">S</span><span>SIAM<span class="brand-dot">.</span></span></a>
-      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="navLinks">
-        <span></span><span></span><span></span>
-      </button>
-      <div class="nav-links" id="navLinks">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light theme" title="Switch theme">☼</button>
-      </div>
+   <header class="navbar">
+    <a href="#home" class="logo">Siam Islam<span>.</span></a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#learning">Learning</a>
+      <a href="#goals">My Goals</a>
+      <a href="#youtube">YouTube</a>
+      
     </nav>
+    <button id="themeToggle" aria-label="Switch to light mode">
+      ☀️ Light mode
+    </button>
   </header>
 
-  <main id="main">
-    <section class="hero section container" id="home">
-      <div class="hero-copy reveal">
-        <p class="eyebrow"><span class="status-dot"></span> HELLO, WORLD! I'M</p>
-        <h1>Siam <span class="gradient-text">Islam.</span></h1>
-        <h2>Learning, building &amp; growing as a <span class="typed-word">web developer</span></h2>
-        <p class="hero-description">I create clean, responsive websites with HTML, CSS and JavaScript. This is my space to share what I'm learning and the projects I'm building.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↗</span></a>
-          <a class="button button-ghost" href="#contact">Let's talk</a>
-        </div>
-        <div class="hero-socials">
-          <a href="https://github.com/siamxs07-beep" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-          <span aria-hidden="true">·</span>
-          <a href="#contact">Contact</a>
-        </div>
-      </div>
-      <div class="hero-visual reveal" aria-label="Siam Islam profile illustration">
-        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
-        <div class="profile-card">
-          <div class="profile-avatar">SI</div>
-          <p class="profile-kicker">THE PERSON BEHIND THE CODE</p>
-          <h3>Siam Islam</h3>
-          <p>Curious mind. Creative builder.</p>
-          <div class="profile-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
-        </div>
-        <span class="floating-chip chip-code">&lt;/&gt; Code</span>
-        <span class="floating-chip chip-star">✦ Keep learning</span>
+  <main>
+    <section id="home" class="hero">
+      <p class="tag">WELCOME TO MY WEBSITE</p>
+      <h1>Hi, I'm <span>Siam Islam</span></h1>
+      <h2>Learning to Code, One Day at a Time.</h2>
+      <p>
+        I'm exploring the world of technology, learning how to build
+        websites and apps, and developing my skills every day.
+      </p>
+      <div class="hero-buttons">
+        <a class="button primary" href="#learning">My Learning Journey</a>
+        <a class="button secondary" href="#youtube">My YouTube</a>
       </div>
     </section>
 
-    <section class="section container" id="about">
-      <div class="section-heading reveal"><p class="eyebrow">A LITTLE ABOUT ME</p><h2>Turning curiosity into <span class="gradient-text">creation.</span></h2></div>
-      <div class="about-grid">
-        <article class="about-panel glass-panel reveal">
-          <p>I'm Siam Islam, an aspiring web developer who enjoys learning how the web works and turning ideas into real websites.</p>
-          <p>I'm currently focused on strengthening my front-end skills, writing better code and building projects that help me improve every day.</p>
-          <p class="about-note">My goal is simple: learn consistently, build useful things and never stop improving.</p>
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <div class="card">
+        <p>
+          Hello! I'm Siam Islam. I'm a beginner learning programming
+          and web development. I enjoy exploring new technologies,
+          solving problems, and creating things with code.
+        </p>
+      </div>
+    </section>
+
+    <section id="learning" class="section">
+      <h2>What I'm Learning</h2>
+      <div class="cards">
+        <article class="card">
+          <div class="emoji">🌐</div>
+          <h3>HTML</h3>
+          <p>Learning how to structure websites and build web pages.</p>
         </article>
-        <div class="stats-grid reveal">
-          <div class="stat-card"><strong>03</strong><span>Core web technologies</span></div>
-          <div class="stat-card"><strong>∞</strong><span>Things to learn</span></div>
-          <div class="stat-card"><strong>100%</strong><span>Curiosity to grow</span></div>
-          <div class="stat-card"><strong>2026</strong><span>Building my future</span></div>
-        </div>
+        <article class="card">
+          <div class="emoji">🎨</div>
+          <h3>CSS</h3>
+          <p>Making websites beautiful with layouts, colors, and design.</p>
+        </article>
+        <article class="card">
+          <div class="emoji">⚡</div>
+          <h3>JavaScript</h3>
+          <p>Adding interactivity and useful features to websites.</p>
+        </article>
       </div>
     </section>
 
-    <section class="section container" id="skills">
-      <div class="section-heading reveal"><p class="eyebrow">WHAT I'M LEARNING</p><h2>My <span class="gradient-text">toolkit.</span></h2><p class="section-intro">The foundations I use to bring websites to life.</p></div>
-      <div class="skills-grid">
-        <article class="skill-card glass-panel reveal"><div class="skill-icon html-icon">5</div><div class="skill-info"><div class="skill-title"><h3>HTML</h3><span>Structure</span></div><p>Building semantic, accessible page structures.</p><div class="skill-track"><span data-level="85"></span></div></div></article>
-        <article class="skill-card glass-panel reveal"><div class="skill-icon css-icon">✳</div><div class="skill-info"><div class="skill-title"><h3>CSS</h3><span>Design</span></div><p>Creating responsive layouts and visual styles.</p><div class="skill-track"><span data-level="75"></span></div></div></article>
-        <article class="skill-card glass-panel reveal"><div class="skill-icon js-icon">JS</div><div class="skill-info"><div class="skill-title"><h3>JavaScript</h3><span>Interaction</span></div><p>Adding useful interactions and dynamic behaviour.</p><div class="skill-track"><span data-level="55"></span></div></div></article>
-      </div>
-      <p class="skill-disclaimer">Skill bars are self-assessments, not formal test scores. Update them as you progress.</p>
-    </section>
-
-    <section class="section container" id="projects">
-      <div class="section-heading reveal"><p class="eyebrow">SELECTED WORK</p><h2>Things I've <span class="gradient-text">built.</span></h2><p class="section-intro">A few projects from my learning journey. Replace these examples with your real work.</p></div>
-      <div class="projects-grid">
-        <article class="project-card glass-panel reveal"><div class="project-art art-one"><span>&lt;HTML /&gt;</span></div><div class="project-content"><p class="project-type">PERSONAL WEBSITE</p><h3>My Personal Website</h3><p>A home on the web to share my profile, goals and development journey.</p><div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><a href="https://github.com/siamxs07-beep/siam-islam-werbsite" target="_blank" rel="noopener noreferrer" class="project-link">View on GitHub ↗</a></div></article>
-        <article class="project-card glass-panel reveal"><div class="project-art art-two"><span>✦ UI DESIGN</span></div><div class="project-content"><p class="project-type">PRACTICE PROJECT</p><h3>Responsive Landing Page</h3><p>A practice page focused on clear layout, responsive design and polished details.</p><div class="project-tags"><span>HTML</span><span>CSS</span></div><a href="#contact" class="project-link">Project link coming soon ↗</a></div></article>
-        <article class="project-card glass-panel reveal"><div class="project-art art-three"><span>{ JS }</span></div><div class="project-content"><p class="project-type">JAVASCRIPT PROJECT</p><h3>Interactive Web App</h3><p>A place for a small JavaScript app, experiment or tool you create next.</p><div class="project-tags"><span>JavaScript</span><span>DOM</span></div><a href="#contact" class="project-link">Project link coming soon ↗</a></div></article>
+    <section id="goals" class="section">
+      <h2>What I Want to Build</h2>
+      <div class="card">
+        <p>
+          I want to build websites, apps, and eventually develop
+          the skills to test and secure systems as an ethical hacker.
+        </p>
       </div>
     </section>
 
-    <section class="contact-section section container" id="contact">
-      <div class="contact-copy reveal"><p class="eyebrow">HAVE A PROJECT IN MIND?</p><h2>Let's make something <span class="gradient-text">great.</span></h2><p>Have a question, an idea or an opportunity? Send me a message. The form will open your email app with the message ready to send.</p><div class="contact-detail"><span class="contact-icon">✉</span><div><small>EMAIL</small><a id="emailDisplay" href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a></div></div></div>
-      <form class="contact-form glass-panel reveal" id="contactForm">
-        <label for="name">Your name</label><input id="name" name="name" type="text" placeholder="Enter your name" required maxlength="80">
-        <label for="email">Your email</label><input id="email" name="email" type="email" placeholder="you@example.com" required maxlength="120">
-        <label for="message">Your message</label><textarea id="message" name="message" rows="5" placeholder="Tell me about your idea..." required maxlength="2000"></textarea>
-        <button class="button button-primary submit-button" type="submit">Prepare email <span aria-hidden="true">↗</span></button>
-        <p class="form-hint" id="formStatus" aria-live="polite">No message is sent automatically. Your email app will open.</p>
-      </form>
+    <section id="youtube" class="section">
+      <h2>My YouTube Channel</h2>
+      <div class="card">
+        <p>
+          Watch my videos on
+          <a href="https://www.youtube.com/@sttkteach"
+             target="_blank"
+             rel="noopener noreferrer">@sttkteach</a>.
+        </p>
+        <a class="button primary"
+           href="https://www.youtube.com/@sttkteach"
+           target="_blank"
+           rel="noopener noreferrer">
+          ▶ Visit My Channel
+        </a>
+      </div><p> 
+<section id="income-site" class="section">
+  <h2>💰 Online Income Opportunity</h2>
+
+  <div class="card">
+    <p>
+      Visit the website and explore the available
+      earning opportunities.
+    </p>
+
+    <a
+      href="https://worker.a8payvip.com/invite?referrerId=boqar"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="button primary"
+    >
+      Visit Income Website ↗
+    </a>
+  </div>
+</section>
+</p>
+<p>
+<section id="facebook" class="section">
+  <h2> My Facebook </h2>
+
+  <div class="card">
+    <p>Follow me on Facebook!</p>
+
+    <a 
+      href="https://www.facebook.com/md.siamxs25"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="button primary"
+    >
+      Visit My Facebook ↗
+    </a>
+  </div>
+</section>
+<section id="contact">
+  <h2>Contact Me</h2>
+  <p>আমার সাথে যোগাযোগ করতে নিচের নম্বরে কল করো।</p>
+
+  <p>📞 Phone: 01924450751</p>
+
+  <a href="tel:+8801924450751" class="contact-btn">
+    📞Call Me
+  </a>
+</section>
+</p> <p>
+<a href="https://wa.me/8801924450751"
+   class="contact-btn"
+   target="_blank">
+  ✅WhatsApp
+</a>
+</p> <p>
+<a href="mailto:YOUR_EMAIL@gmail.com" class="contact-btn">
+  ✉️ Email Me
+</a>
+</p>
+  <footer>
+    <p>© <span id="year">2026</span> Siam Islam. Learning something new every day.</p>
+  </footer>
     </section>
   </main>
 
-  <footer class="site-footer"><div class="container footer-inner"><a class="brand" href="#home"><span class="brand-mark">S</span><span>SIAM<span class="brand-dot">.</span></span></a><p>Designed &amp; built by Siam Islam · <span id="year"></span></p><a href="#home" class="back-top">Back to top ↑</a></div></footer>
 </body>
 </html>
